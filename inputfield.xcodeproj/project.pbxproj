@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,44 @@
 		CC652E5D223784950011A53C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC652E5B223784950011A53C /* Main.storyboard */; };
 		CC652E5F223784970011A53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC652E5E223784970011A53C /* Assets.xcassets */; };
 		CC652E62223784970011A53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC652E60223784970011A53C /* LaunchScreen.storyboard */; };
+		CC652E6E22378A600011A53C /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E6D22378A600011A53C /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC652E7022378A760011A53C /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E6F22378A760011A53C /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC652E7222378A890011A53C /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E7122378A890011A53C /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC652E7522378AED0011A53C /* ReactiveCocoa.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = CC652E7422378AED0011A53C /* ReactiveCocoa.framework.dSYM */; };
+		CC652E7722378B040011A53C /* ReactiveSwift.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = CC652E7622378B040011A53C /* ReactiveSwift.framework.dSYM */; };
+		CC652E7922378B190011A53C /* Result.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = CC652E7822378B190011A53C /* Result.framework.dSYM */; };
+		CC652E7E22378C2C0011A53C /* frameworks_input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = CC652E6A2237885B0011A53C /* frameworks_input.xcfilelist */; };
+		CC652E8022378C330011A53C /* frameworks_output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = CC652E6B223788730011A53C /* frameworks_output.xcfilelist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC652E6C223789D30011A53C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC652E7222378A890011A53C /* ReactiveCocoa.framework in Embed Frameworks */,
+				CC652E7022378A760011A53C /* ReactiveSwift.framework in Embed Frameworks */,
+				CC652E6E22378A600011A53C /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC652E7322378AB60011A53C /* Copy dSYM Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				CC652E7922378B190011A53C /* Result.framework.dSYM in Copy dSYM Files */,
+				CC652E7722378B040011A53C /* ReactiveSwift.framework.dSYM in Copy dSYM Files */,
+				CC652E7522378AED0011A53C /* ReactiveCocoa.framework.dSYM in Copy dSYM Files */,
+			);
+			name = "Copy dSYM Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC652E54223784950011A53C /* inputfield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inputfield.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +59,14 @@
 		CC652E5E223784970011A53C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC652E61223784970011A53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC652E63223784970011A53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC652E6A2237885B0011A53C /* frameworks_input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = frameworks_input.xcfilelist; sourceTree = "<group>"; };
+		CC652E6B223788730011A53C /* frameworks_output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = frameworks_output.xcfilelist; sourceTree = "<group>"; };
+		CC652E6D22378A600011A53C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		CC652E6F22378A760011A53C /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		CC652E7122378A890011A53C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		CC652E7422378AED0011A53C /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/iOS/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
+		CC652E7622378B040011A53C /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/iOS/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		CC652E7822378B190011A53C /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				CC652E56223784950011A53C /* inputfield */,
+				CC652E8122378C5D0011A53C /* Frameworks */,
+				CC652E8222378C8A0011A53C /* dSYMs */,
 				CC652E55223784950011A53C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,8 +107,30 @@
 				CC652E5E223784970011A53C /* Assets.xcassets */,
 				CC652E60223784970011A53C /* LaunchScreen.storyboard */,
 				CC652E63223784970011A53C /* Info.plist */,
+				CC652E6A2237885B0011A53C /* frameworks_input.xcfilelist */,
+				CC652E6B223788730011A53C /* frameworks_output.xcfilelist */,
 			);
 			path = inputfield;
+			sourceTree = "<group>";
+		};
+		CC652E8122378C5D0011A53C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC652E7122378A890011A53C /* ReactiveCocoa.framework */,
+				CC652E6F22378A760011A53C /* ReactiveSwift.framework */,
+				CC652E6D22378A600011A53C /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC652E8222378C8A0011A53C /* dSYMs */ = {
+			isa = PBXGroup;
+			children = (
+				CC652E7822378B190011A53C /* Result.framework.dSYM */,
+				CC652E7622378B040011A53C /* ReactiveSwift.framework.dSYM */,
+				CC652E7422378AED0011A53C /* ReactiveCocoa.framework.dSYM */,
+			);
+			name = dSYMs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +143,9 @@
 				CC652E50223784950011A53C /* Sources */,
 				CC652E51223784950011A53C /* Frameworks */,
 				CC652E52223784950011A53C /* Resources */,
+				CC652E69223786E20011A53C /* Copy Frameworks */,
+				CC652E6C223789D30011A53C /* Embed Frameworks */,
+				CC652E7322378AB60011A53C /* Copy dSYM Files */,
 			);
 			buildRules = (
 			);
@@ -122,6 +194,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC652E7E22378C2C0011A53C /* frameworks_input.xcfilelist in Resources */,
+				CC652E8022378C330011A53C /* frameworks_output.xcfilelist in Resources */,
 				CC652E62223784970011A53C /* LaunchScreen.storyboard in Resources */,
 				CC652E5F223784970011A53C /* Assets.xcassets in Resources */,
 				CC652E5D223784950011A53C /* Main.storyboard in Resources */,
@@ -129,6 +203,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC652E69223786E20011A53C /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/frameworks_input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "Copy Frameworks";
+			outputFileListPaths = (
+				"$(SRCROOT)/frameworks_output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC652E50223784950011A53C /* Sources */ = {
@@ -292,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.quietbranchstudio.inputfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.quietbranchstudio.inputfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
