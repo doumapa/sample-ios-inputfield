@@ -12,30 +12,18 @@
 		CC652E5D223784950011A53C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC652E5B223784950011A53C /* Main.storyboard */; };
 		CC652E5F223784970011A53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC652E5E223784970011A53C /* Assets.xcassets */; };
 		CC652E62223784970011A53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC652E60223784970011A53C /* LaunchScreen.storyboard */; };
-		CC652E6E22378A600011A53C /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E6D22378A600011A53C /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CC652E7022378A760011A53C /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E6F22378A760011A53C /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CC652E7222378A890011A53C /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E7122378A890011A53C /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC652E7522378AED0011A53C /* ReactiveCocoa.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = CC652E7422378AED0011A53C /* ReactiveCocoa.framework.dSYM */; };
 		CC652E7722378B040011A53C /* ReactiveSwift.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = CC652E7622378B040011A53C /* ReactiveSwift.framework.dSYM */; };
 		CC652E7922378B190011A53C /* Result.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = CC652E7822378B190011A53C /* Result.framework.dSYM */; };
 		CC652E7E22378C2C0011A53C /* frameworks_input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = CC652E6A2237885B0011A53C /* frameworks_input.xcfilelist */; };
 		CC652E8022378C330011A53C /* frameworks_output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = CC652E6B223788730011A53C /* frameworks_output.xcfilelist */; };
+		CC652E83223794B60011A53C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E7122378A890011A53C /* ReactiveCocoa.framework */; };
+		CC652E84223794C80011A53C /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E6F22378A760011A53C /* ReactiveSwift.framework */; };
+		CC652E85223794DB0011A53C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E6D22378A600011A53C /* Result.framework */; };
+		CC652E872238AA050011A53C /* FlexTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC652E862238AA050011A53C /* FlexTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CC652E6C223789D30011A53C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CC652E7222378A890011A53C /* ReactiveCocoa.framework in Embed Frameworks */,
-				CC652E7022378A760011A53C /* ReactiveSwift.framework in Embed Frameworks */,
-				CC652E6E22378A600011A53C /* Result.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CC652E7322378AB60011A53C /* Copy dSYM Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,6 +55,7 @@
 		CC652E7422378AED0011A53C /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/iOS/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
 		CC652E7622378B040011A53C /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/iOS/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
 		CC652E7822378B190011A53C /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
+		CC652E862238AA050011A53C /* FlexTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC652E85223794DB0011A53C /* Result.framework in Frameworks */,
+				CC652E84223794C80011A53C /* ReactiveSwift.framework in Frameworks */,
+				CC652E83223794B60011A53C /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +95,7 @@
 			children = (
 				CC652E57223784950011A53C /* AppDelegate.swift */,
 				CC652E59223784950011A53C /* ViewController.swift */,
+				CC652E862238AA050011A53C /* FlexTextField.swift */,
 				CC652E5B223784950011A53C /* Main.storyboard */,
 				CC652E5E223784970011A53C /* Assets.xcassets */,
 				CC652E60223784970011A53C /* LaunchScreen.storyboard */,
@@ -144,7 +137,6 @@
 				CC652E51223784950011A53C /* Frameworks */,
 				CC652E52223784950011A53C /* Resources */,
 				CC652E69223786E20011A53C /* Copy Frameworks */,
-				CC652E6C223789D30011A53C /* Embed Frameworks */,
 				CC652E7322378AB60011A53C /* Copy dSYM Files */,
 			);
 			buildRules = (
@@ -211,13 +203,13 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/frameworks_input.xcfilelist",
+				"$(SRCROOT)/inputfield/frameworks_input.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = "Copy Frameworks";
 			outputFileListPaths = (
-				"$(SRCROOT)/frameworks_output.xcfilelist",
+				"$(SRCROOT)/inputfield/frameworks_output.xcfilelist",
 			);
 			outputPaths = (
 			);
@@ -234,6 +226,7 @@
 			files = (
 				CC652E5A223784950011A53C /* ViewController.swift in Sources */,
 				CC652E58223784950011A53C /* AppDelegate.swift in Sources */,
+				CC652E872238AA050011A53C /* FlexTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +374,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7T2Z6RR4DM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = inputfield/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,6 +396,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7T2Z6RR4DM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = inputfield/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
