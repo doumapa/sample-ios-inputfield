@@ -21,6 +21,7 @@
 		CC652E84223794C80011A53C /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E6F22378A760011A53C /* ReactiveSwift.framework */; };
 		CC652E85223794DB0011A53C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC652E6D22378A600011A53C /* Result.framework */; };
 		CC652E872238AA050011A53C /* FlexTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC652E862238AA050011A53C /* FlexTextField.swift */; };
+		CC652E8922423DD30011A53C /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC652E8822423DD30011A53C /* UIAlertController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,7 @@
 		CC652E7622378B040011A53C /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/iOS/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
 		CC652E7822378B190011A53C /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
 		CC652E862238AA050011A53C /* FlexTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexTextField.swift; sourceTree = "<group>"; };
+		CC652E8822423DD30011A53C /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				CC652E57223784950011A53C /* AppDelegate.swift */,
 				CC652E59223784950011A53C /* ViewController.swift */,
+				CC652E8822423DD30011A53C /* UIAlertController+.swift */,
 				CC652E862238AA050011A53C /* FlexTextField.swift */,
 				CC652E5B223784950011A53C /* Main.storyboard */,
 				CC652E5E223784970011A53C /* Assets.xcassets */,
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC652E8922423DD30011A53C /* UIAlertController+.swift in Sources */,
 				CC652E5A223784950011A53C /* ViewController.swift in Sources */,
 				CC652E58223784950011A53C /* AppDelegate.swift in Sources */,
 				CC652E872238AA050011A53C /* FlexTextField.swift in Sources */,

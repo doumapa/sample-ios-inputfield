@@ -28,6 +28,9 @@ class ViewController: UIViewController {
     textField.rightView = textFieldRightImageView
     textField.rightViewMode = .whileEditing
     textField.isSecureTextEntry = true
+
+    let view = UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self])
+    view.tintColor = .green
   }
 
   private func bind() {
@@ -41,6 +44,23 @@ class ViewController: UIViewController {
       }
       return gesture
     } (UITapGestureRecognizer()))
+    actionSheetButton.reactive.pressed = CocoaAction<UIButton>(Action<Void, Void, NoError> {
+      UIAlertController.present(in: self,
+                                title: nil /*"支出"*/,
+                                message: "支出",
+                                style: .actionSheet,
+                                actions: [
+                                  .action(title: "週間"),
+                                  .action(title: "月間"),
+                                  .action(title: "年間"),
+                                  .action(title: "キャンセル", style: .cancel),
+                                  ])
+        .take(duringLifetimeOf: self)
+        .observeValues { (index: Int) in
+          print("index:\(index)")
+      }
+      return SignalProducer.empty
+    })
   }
 
 }
